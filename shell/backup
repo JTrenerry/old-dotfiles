@@ -5,6 +5,12 @@ echo "Backup started at $current_date"
 
 exclude="--exclude */node_modules"
 
-borg create --progress --stats /mnt/backup::$current_date ~/Documents
+cd ~/Documents
+
+borg prune --force --force --stats --list -H 24 -d 31 -w 8 -m 12 -y 2 --save-space /mnt/backup
+
+borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backup::'{hostname}-{now}' ~/Documents
+
+borg compact /mnt/backup
 
 echo "Backup finished"
