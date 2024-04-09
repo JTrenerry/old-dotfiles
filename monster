@@ -1,0 +1,3 @@
+#!/bin/bash
+sleep 60
+npm --prefix ~/Documents/MiscCode/Code/MonsterEnergy/node  start

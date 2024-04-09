@@ -1,0 +1,10 @@
+#!/bin/bash
+current_date=$(date +"%d-%m-%y-%H-%M")
+
+echo "Backup started at $current_date"
+
+exclude="--exclude */node_modules"
+
+borg create --progress --stats /mnt/backup::$current_date ~/Documents
+
+echo "Backup finished"

@@ -1,0 +1,9 @@
+[Unit]
+Description=Runs backup everytime the laptop boots
+
+[Service]
+User=Jackson
+ExecStart=/usr/bin/backup
+
+[Install]
+WantedBy=multi-user.target 
