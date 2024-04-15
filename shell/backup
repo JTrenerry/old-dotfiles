@@ -1,4 +1,7 @@
 #!/bin/bash
+
+[[ "${EUID}" = "0" ]] && ( echo "Do not run as root." ; exit 1 )
+
 current_date=$(date +"%d-%m-%y-%H-%M")
 
 pacy # Updates pac.txt so that All pacman files are the ones currently in use
