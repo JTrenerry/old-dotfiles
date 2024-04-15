@@ -1,0 +1,26 @@
+#!/bin/bash
+# This script updates everything in this folder for a backup
+## Config files
+cp /home/Jackson/.vimrc /home/Jackson/Documents/MiscCode/Code/shell/conf/.vimrc
+cp /home/Jackson/.config/tmux/tmux.conf /home/Jackson/Documents/MiscCode/Code/shell/conf/tmux.conf
+cp /home/Jackson/.bashrc /home/Jackson/Documents/MiscCode/Code/shell/conf/.bashrc
+
+# Services Files
+cp /etc/systemd/system/backup.service /home/Jackson/Documents/MiscCode/Code/shell/services/backup.service
+cp /etc/systemd/system/monster.service /home/Jackson/Documents/MiscCode/Code/shell/services/monster.service
+
+# Scripts
+cp /usr/bin/backup /home/Jackson/Documents/MiscCode/Code/shell/shell/backup
+cp /usr/bin/monster /home/Jackson/Documents/MiscCode/Code/shell/shell/monster
+cp /usr/bin/moss /home/Jackson/Documents/MiscCode/Code/shell/shell/moss
+cp /usr/bin/move /home/Jackson/Documents/MiscCode/Code/shell/shell/move
+cp /usr/bin/pacy /home/Jackson/Documents/MiscCode/Code/shell/shell/pacy
+cp /usr/bin/backup_scripts /home/Jackson/Documents/MiscCode/Code/shell/shell/backup_scripts
+cp /usr/bin/pacres /home/Jackson/Documents/MiscCode/Code/shell/shell/pacres
+
+# Push to github
+current_date=$(date +"%d-%m-%y-%H-%M")
+cd /home/Jackson/Documents/MiscCode/Code/shell
+git add .
+git commit -m "auto update at $current_date"
+git push

@@ -1,13 +1,11 @@
-# All of this goes to ~/.vimrc
-
 set number
 highlight Comment ctermfg=green
+set guioptions+=a
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set hlsearch
-
-# Remove the below for the global vimrc (/etc/vimrc)
+set clipboard=unnamed
 
 " Plugin section
 call plug#begin()
