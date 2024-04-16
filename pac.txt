@@ -45,6 +45,7 @@ ca-certificates-utils
 cairo
 cantarell-fonts
 caribou
+chromium
 cifs-utils
 cinnamon
 cinnamon-control-center
@@ -752,6 +753,7 @@ tree-sitter-query
 tree-sitter-vimdoc
 ts-node
 tslib
+ttf-liberation
 ttf-opensans
 typescript
 tzdata
