@@ -17,6 +17,7 @@ cp /usr/bin/move /home/Jackson/Documents/MiscCode/Code/shell/shell/move
 cp /usr/bin/pacy /home/Jackson/Documents/MiscCode/Code/shell/shell/pacy
 cp /usr/bin/backup_scripts /home/Jackson/Documents/MiscCode/Code/shell/shell/backup_scripts
 cp /usr/bin/pacres /home/Jackson/Documents/MiscCode/Code/shell/shell/pacres
+cp /usr/bin/meow /home/Jackson/Documents/MiscCode/Code/shell/shell/meow
 
 # Push to github
 current_date=$(date +"%d-%m-%y-%H-%M")
