@@ -781,6 +781,7 @@ vulkan-icd-loader
 wayland
 webkit2gtk
 webkit2gtk-4.1
+webkitgtk-6.0
 webp-pixbuf-loader
 webrtc-audio-processing-1
 wget
