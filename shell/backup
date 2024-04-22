@@ -31,6 +31,8 @@ borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backu
 
 borg compact /mnt/backup
 
+sleep 3
+
 sudo umount /mnt/backup
 
 # Check if unmount was successful
