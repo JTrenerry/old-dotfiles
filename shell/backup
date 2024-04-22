@@ -17,10 +17,14 @@ exclude="--exclude */node_modules"
 
 cd ~/Documents
 
+mount /dev/sda1 /mnt/backup
+
 borg prune --force --force --stats --list --keep-within 2d -d 31 -w 8 -m 12 -y 2 --save-space /mnt/backup
 
 borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backup::'{hostname}-{now}' ~/Documents
 
 borg compact /mnt/backup
+
+umount /mnt/backup
 
 echo "Backup finished"
