@@ -11,8 +11,6 @@ pacy # Updates pac.txt so that All pacman files are the ones currently in use
 
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
 
-sudo mount /dev/sda1 /mnt/backup
-
 # Check if mount was successful
 if [ $? -ne 0 ]; then
     echo "Failed to mount /mnt/backup. Exiting..."
@@ -30,8 +28,6 @@ borg prune --force --force --stats --list --keep-within 2d -d 31 -w 8 -m 12 -y 2
 borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backup::Jacksons-Laptop-'{now}' ~/Documents
 
 borg compact /mnt/backup
-
-sudo umount /mnt/backup
 
 # Check if unmount was successful
 if [ $? -ne 0 ]; then
