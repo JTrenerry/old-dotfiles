@@ -218,6 +218,8 @@ js115
 json-c
 json-glib
 jsoncpp
+k6
+k6-debug
 kbd
 keyutils
 kguiaddons5
