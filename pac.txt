@@ -476,8 +476,6 @@ libyuv
 libzmf
 licenses
 lightdm
-lightdm-webkit-theme-aether
-lightdm-webkit2-greeter
 lilv
 linux
 linux-api-headers
