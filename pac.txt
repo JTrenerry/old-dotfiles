@@ -476,6 +476,7 @@ libyuv
 libzmf
 licenses
 lightdm
+lightdm-gtk-greeter
 lilv
 linux
 linux-api-headers
