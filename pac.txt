@@ -508,6 +508,7 @@ mlt
 mobile-broadband-provider-info
 mono
 movit
+mpdecimal
 mpfr
 mpg123
 mpv
