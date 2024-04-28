@@ -3,7 +3,7 @@
 ## Config files
 cp /home/jackson/.vimrc /home/jackson/Documents/MiscCode/Code/shell/conf/.vimrc
 cp /home/jackson/.config/tmux/tmux.config /home/jackson/Documents/MiscCode/Code/shell/conf/tmux.config
-cp /home/jackson/.config/nvim/nvim.init /home/jackson/Documents/MiscCode/Code/shell/conf/nvim.init
+cp /home/jackson/.config/nvim/init.vim /home/jackson/Documents/MiscCode/Code/shell/conf/nvim.init
 cp /home/jackson/.bashrc /home/jackson/Documents/MiscCode/Code/shell/conf/.bashrc
 
 # Services Files

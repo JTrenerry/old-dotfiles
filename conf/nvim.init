@@ -1,0 +1,33 @@
+" Enable syntax highlighting
+syntax enable
+
+" Enable filetype detection
+filetype plugin indent on
+
+" Set tab width to 4 spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Enable line numbers
+set number
+
+" Set cursor line highlighting
+set cursorline
+
+" Highlight search results as you type
+set incsearch
+
+" Enable mouse support in all modes
+set mouse=a
+
+" Enable better handling of line wrapping
+set wrap
+set linebreak
+set nolist
+
+" CLipboard
+set clipboard=unnamedplus
+
+" Set status line options
+set laststatus=2
