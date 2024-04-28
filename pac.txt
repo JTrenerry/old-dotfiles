@@ -544,9 +544,6 @@ openexr
 openjpeg2
 openssh
 openssl
-optimus-manager
-optimus-manager-qt
-optimus-manager-qt-debug
 opus
 orc
 p11-kit
