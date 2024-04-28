@@ -36,5 +36,6 @@ LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 #
 alias ls='ls --color=auto'
 alias Please='sudo'
-alias vi='vim'
-alias nano='vim'
+alias vi='nvim'
+alias vim='nvim'
+alias nano='nvim'
