@@ -534,6 +534,7 @@ nspr
 nss
 nuget
 nvidia
+nvidia-prime
 nvidia-settings
 nvidia-utils
 ocl-icd
