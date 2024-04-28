@@ -544,6 +544,7 @@ openexr
 openjpeg2
 openssh
 openssl
+optimus-manager
 opus
 orc
 p11-kit
