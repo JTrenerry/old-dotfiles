@@ -1,27 +1,25 @@
 #!/bin/bash
 # This script updates everything in this folder for a backup
 ## Config files
-cp /home/Jackson/.vimrc /home/Jackson/Documents/MiscCode/Code/shell/conf/.vimrc
-cp /home/Jackson/.config/tmux/tmux.conf /home/Jackson/Documents/MiscCode/Code/shell/conf/tmux.conf
-cp /home/Jackson/.bashrc /home/Jackson/Documents/MiscCode/Code/shell/conf/.bashrc
+cp /home/jackson/.vimrc /home/jackson/Documents/MiscCode/Code/shell/conf/.vimrc
+cp /home/jackson/.config/tmux/tmux.config /home/jackson/Documents/MiscCode/Code/shell/conf/tmux.config
+cp /home/jackson/.bashrc /home/jackson/Documents/MiscCode/Code/shell/conf/.bashrc
 
 # Services Files
-cp /etc/systemd/system/backup.service /home/Jackson/Documents/MiscCode/Code/shell/services/backup.service
-cp /etc/systemd/system/monster.service /home/Jackson/Documents/MiscCode/Code/shell/services/monster.service
+cp /etc/systemd/system/backup.service /home/jackson/Documents/MiscCode/Code/shell/services/backup.service
+cp /etc/systemd/system/monster.service /home/jackson/Documents/MiscCode/Code/shell/services/monster.service
 
 # Scripts
-cp /usr/bin/backup /home/Jackson/Documents/MiscCode/Code/shell/shell/backup
-cp /usr/bin/monster /home/Jackson/Documents/MiscCode/Code/shell/shell/monster
-cp /usr/bin/moss /home/Jackson/Documents/MiscCode/Code/shell/shell/moss
-cp /usr/bin/move /home/Jackson/Documents/MiscCode/Code/shell/shell/move
-cp /usr/bin/pacy /home/Jackson/Documents/MiscCode/Code/shell/shell/pacy
-cp /usr/bin/backup_scripts /home/Jackson/Documents/MiscCode/Code/shell/shell/backup_scripts
-cp /usr/bin/pacres /home/Jackson/Documents/MiscCode/Code/shell/shell/pacres
-cp /usr/bin/meow /home/Jackson/Documents/MiscCode/Code/shell/shell/meow
+cp /usr/bin/backup /home/jackson/Documents/MiscCode/Code/shell/shell/backup
+cp /usr/bin/monster /home/jackson/Documents/MiscCode/Code/shell/shell/monster
+cp /usr/bin/moss /home/jackson/Documents/MiscCode/Code/shell/shell/moss
+cp /usr/bin/move /home/jackson/Documents/MiscCode/Code/shell/shell/move
+cp /usr/bin/backup_scripts /home/jackson/Documents/MiscCode/Code/shell/shell/backup_scripts
+cp /usr/bin/meow /home/jackson/Documents/MiscCode/Code/shell/shell/meow
 
 # Push to github
 current_date=$(date +"%d-%m-%y-%H-%M")
-cd /home/Jackson/Documents/MiscCode/Code/shell
+cd /home/jackson/Documents/MiscCode/Code/shell
 git add .
 git commit -m "auto update at $current_date"
 git push

@@ -7,8 +7,6 @@ fi
 
 current_date=$(date +"%d-%m-%y-%H-%M")
 
-pacy # Updates pac.txt so that All pacman files are the ones currently in use
-
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
 
 echo "Backup started at $current_date"

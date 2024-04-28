@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo pacman -S $(cat ~/Documents/MiscCode/Code/shell/pac.txt)
