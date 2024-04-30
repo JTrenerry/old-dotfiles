@@ -5,7 +5,7 @@ if [[ $EUID -eq 0 ]]; then
    exit 80085
 fi
 
-mount /dev/sda1 /mnt/backup
+sudo mount /dev/sda1 /mnt/backup
 
 current_date=$(date +"%d-%m-%y-%H-%M")
 
@@ -23,6 +23,6 @@ borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backu
 
 borg compact /mnt/backup
 
-umount /dev/sda1 /mnt/backup
+sudo umount /dev/sda1
 
 echo "Backup finished"
