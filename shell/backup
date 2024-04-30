@@ -5,8 +5,6 @@ if [[ $EUID -eq 0 ]]; then
    exit 80085
 fi
 
-sudo mount /dev/sda1 /mnt/backup
-
 current_date=$(date +"%d-%m-%y-%H-%M")
 
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
@@ -22,9 +20,5 @@ borg prune --force --force --stats --list --keep-within 2d -d 31 -w 8 -m 12 -y 2
 borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backup::Jacksons-Laptop-'{now}' ~/Documents
 
 borg compact /mnt/backup
-
-sleep 5
-
-sudo umount /dev/sda1
 
 echo "Backup finished"
