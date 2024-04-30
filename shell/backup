@@ -23,6 +23,8 @@ borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backu
 
 borg compact /mnt/backup
 
+sleep 5
+
 sudo umount /dev/sda1
 
 echo "Backup finished"
