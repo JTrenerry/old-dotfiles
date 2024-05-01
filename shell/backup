@@ -12,7 +12,7 @@ exclude="--exclude */node_modules"
 
 borg prune --force --force --stats --list --keep-within 2d -d 31 -w 8 -m 12 -y 2 --save-space /mnt/backup
 
-borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backup::Jacksons-Laptop-'{now}' /home/jackson/Documents
+borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backup::'{hostname-now}' /home/jackson/Documents
 
 borg compact /mnt/backup
 
