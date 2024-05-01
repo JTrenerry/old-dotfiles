@@ -2,7 +2,6 @@
 Description=Runs backup everytime the laptop boots
 
 [Service]
-User=jackson
 ExecStart=/usr/bin/backup
 
 [Install]

@@ -2,18 +2,20 @@
 
 current_date=$(date +"%d-%m-%y-%H-%M")
 
+mount /dev/sda1 /mnt/backup
+
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
 
 echo "Backup started at $current_date"
 
 exclude="--exclude */node_modules"
 
-cd ~/Documents
-
 borg prune --force --force --stats --list --keep-within 2d -d 31 -w 8 -m 12 -y 2 --save-space /mnt/backup
 
 borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backup::Jacksons-Laptop-'{now}' /home/jackson/Documents
 
 borg compact /mnt/backup
+
+umount /dev/sda1
 
 echo "Backup finished"
