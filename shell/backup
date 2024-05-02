@@ -4,9 +4,9 @@ current_date=$(date +"%d-%m-%y-%H-%M")
 
 mount /dev/sda1 /mnt/backup
 
-if [ $? -eq 0 ]; then
+if [ $? -ne 0 ]; then
 	echo "Mount failed"
-	return 1
+	exit 1
 fi
 
 echo "Mount Success"
@@ -25,9 +25,9 @@ borg compact /mnt/backup
 
 umount /dev/sda1
 
-if [ $? -eq 0 ]; then
+if [ $? -ne 0 ]; then
 	echo "Unmount failed"
-	return 2
+	exit 2
 fi
 
 echo "Unmount Success"
