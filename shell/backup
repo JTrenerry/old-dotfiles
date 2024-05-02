@@ -4,6 +4,13 @@ current_date=$(date +"%d-%m-%y-%H-%M")
 
 mount /dev/sda1 /mnt/backup
 
+if [ $? -eq 0 ]; then
+	echo "Mount failed"
+	return 1
+fi
+
+echo "Mount Success"
+
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
 
 echo "Backup started at $current_date"
@@ -17,5 +24,12 @@ borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backu
 borg compact /mnt/backup
 
 umount /dev/sda1
+
+if [ $? -eq 0 ]; then
+	echo "Unmount failed"
+	return 2
+fi
+
+echo "Unmount Success"
 
 echo "Backup finished"
