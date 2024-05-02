@@ -13,7 +13,7 @@ echo -e "Mount Success\n"
 
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
 
-echo "Backup started at $current_date\n"
+echo -e "\nBackup started at $current_date\n"
 
 exclude="--exclude */node_modules"
 
@@ -30,6 +30,6 @@ if [ $? -ne 0 ]; then
 	exit 2
 fi
 
-echo -e "Unmount Success\n"
+echo -e "\nUnmount Success\n"
 
 echo "Backup finished"
