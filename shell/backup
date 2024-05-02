@@ -9,7 +9,7 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
-echo "Mount Success\n"
+echo -e "Mount Success\n"
 
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
 
@@ -30,6 +30,6 @@ if [ $? -ne 0 ]; then
 	exit 2
 fi
 
-echo "Unmount Success\n"
+echo -e "Unmount Success\n"
 
 echo "Backup finished"
