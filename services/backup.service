@@ -2,6 +2,7 @@
 Description=Runs backup everytime the laptop boots
 
 [Service]
+User=root
 ExecStart=/usr/bin/backup
 
 [Install]

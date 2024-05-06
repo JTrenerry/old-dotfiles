@@ -11,6 +11,7 @@ fi
 
 echo -e "Mount Success\n"
 
+
 backup_scripts # Updates the files in the github repo full of shell scripts and conf with the ones currently in use
 
 echo -e "\nBackup started at $current_date\n"
