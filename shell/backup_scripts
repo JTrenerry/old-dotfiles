@@ -1,26 +1,31 @@
 #!/bin/bash
 # This script updates everything in this folder for a backup
+
+FILES="/home/jackson/Documents/Code/shell"
+
 ## Config files
-cp /home/jackson/.vimrc /home/jackson/Documents/code/shell/conf/.vimrc
-cp /home/jackson/.config/tmux/tmux.config /home/jackson/Documents/code/shell/conf/tmux.config
-cp /home/jackson/.config/nvim/init.vim /home/jackson/Documents/code/shell/conf/nvim.init
-cp /home/jackson/.bashrc /home/jackson/Documents/code/shell/conf/.bashrc
+cp /home/jackson/.vimrc $FILES/conf/.vimrc
+cp /home/jackson/.config/tmux/tmux.config $FILES/conf/tmux.config
+cp /home/jackson/.config/nvim/init.vim $FILES/conf/nvim.init
+cp /home/jackson/.bashrc $FILES/conf/.bashrc
 
 # Services Files
-cp /etc/systemd/system/backup.service /home/jackson/Documents/code/shell/services/backup.service
-cp /etc/systemd/system/monster.service /home/jackson/Documents/code/shell/services/monster.service
+cp /etc/systemd/system/backup.service $FILES/services/backup.service
+cp /etc/systemd/system/monster.service $FILES/services/monster.service
 
 # Scripts
-cp /usr/bin/backup /home/jackson/Documents/code/shell/shell/backup
-cp /usr/bin/monster /home/jackson/Documents/code/shell/shell/monster
-cp /usr/bin/moss /home/jackson/Documents/code/shell/shell/moss
-cp /usr/bin/move /home/jackson/Documents/code/shell/shell/move
-cp /usr/bin/backup_scripts /home/jackson/Documents/code/shell/shell/backup_scripts
-cp /usr/bin/meow /home/jackson/Documents/code/shell/shell/meow
+cp /usr/local/bin/backup $FILES/shell/backup
+cp /usr/local/bin/monster $FILES/shell/monster
+cp /usr/local/bin/moss $FILES/shell/moss
+cp /usr/local/bin/move $FILES/shell/move
+cp /usr/local/bin/backup_scripts $FILES/shell/backup_scripts
+cp /usr/local/bin/meow $FILES/shell/meow
+cp /usr/local/bin/pip $FILES/shell/pip
 
 # Push to github
 current_date=$(date +"%d-%m-%y-%H-%M")
-cd /home/jackson/Documents//code/shell
+cd $FILES
 git add .
 git commit -m "auto update at $current_date"
 git push
+

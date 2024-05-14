@@ -26,4 +26,9 @@ Plug 'https://github.com/sheerun/vim-polyglot.git'
 
 Plug 'https://github.com/f-person/git-blame.nvim.git'
 
+Plug 'vimsence/vimsence'
+
 call plug#end()
+
+
+let g:vimsence_client_id = '426678683168800768'

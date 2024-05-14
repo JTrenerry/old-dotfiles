@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npm --prefix ~/Documents/code/MonsterEnergy/node  start
+npm --prefix ~/Documents/Code/MonsterEnergy/node  start

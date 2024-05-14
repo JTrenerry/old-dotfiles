@@ -3,7 +3,7 @@ Description=Runs Monster Energy Web Scraper
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/monster
+ExecStart=/usr/local/bin/monster
 User=Jackson
 
 [Install]
