@@ -20,7 +20,7 @@ cp /usr/local/bin/moss $FILES/shell/moss
 cp /usr/local/bin/move $FILES/shell/move
 cp /usr/local/bin/backup_scripts $FILES/shell/backup_scripts
 cp /usr/local/bin/meow $FILES/shell/meow
-cp /usr/local/bin/pip $FILES/shell/pip
+cp /usr/local/bin/piplup $FILES/shell/pip
 
 # Push to github
 current_date=$(date +"%d-%m-%y-%H-%M")
