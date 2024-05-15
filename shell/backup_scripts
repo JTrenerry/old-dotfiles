@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script updates everything in this folder for a backup
 
 FILES="/home/jackson/Documents/Code/shell"
@@ -15,7 +15,6 @@ cp /etc/systemd/system/monster.service $FILES/services/monster.service
 
 # Scripts
 cp /usr/local/bin/backup $FILES/shell/backup
-cp /usr/local/bin/monster $FILES/shell/monster
 cp /usr/local/bin/moss $FILES/shell/moss
 cp /usr/local/bin/move $FILES/shell/move
 cp /usr/local/bin/backup_scripts $FILES/shell/backup_scripts

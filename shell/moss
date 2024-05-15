@@ -1,2 +1,2 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ssh s4743951@moss.labs.eait.uq.edu.au
