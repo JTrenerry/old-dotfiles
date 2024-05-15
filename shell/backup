@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-Vcurrent_date=$(date +"%d-%m-%y-%H-%M")
+current_date=$(date +"%d-%m-%y-%H-%M")
 
 mount /dev/sda1 /mnt/backup
 
