@@ -30,5 +30,7 @@ Plug 'vimsence/vimsence'
 
 call plug#end()
 
-
-let g:vimsence_client_id = '426678683168800768'
+let g:vimsence_small_text = 'NeoVim'
+let g:vimsence_small_image = 'neovim'
+let g:vimsence_editing_details = 'Editing: {}'
+let g:vimsence_editing_state = 'Working on: {}'
