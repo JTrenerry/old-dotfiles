@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ssh jackson@192.168.42.2
+ssh jackson@192.168.1.219
