@@ -39,3 +39,6 @@ alias Please='sudo'
 alias vi='nvim'
 alias vim='nvim'
 alias nano='nvim'
+
+alias moss='ssh s4743951@moss.labs.eait.uq.edu.au'
+alias piplip='ssh jackson@192.168.1.219'
