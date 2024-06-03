@@ -1,5 +1,4 @@
 # Locations
-
 ### Tmux
 tmux location ~/.config/tmux/tmux.conf   
 
@@ -12,5 +11,4 @@ vim global location /etc/vimrc (make sure you remove the plugin sections)
 /usr/local/bin
 
 ### Services
-backup service location /etc/systemd/system/backup.service    
-monster service location /etc/systemd/system/monster.service    
+/etc/systemd/system/*.service     
