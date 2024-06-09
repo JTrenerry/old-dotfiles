@@ -41,4 +41,4 @@ alias vim='nvim'
 alias nano='nvim'
 
 alias moss='ssh s4743951@moss.labs.eait.uq.edu.au'
-alias piplip='ssh jackson@192.168.1.219'
+alias piplup='ssh jackson@192.168.1.219'

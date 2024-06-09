@@ -7,6 +7,7 @@ cp /home/jackson/.vimrc $FILES/conf/.vimrc
 cp /home/jackson/.config/tmux/tmux.config $FILES/conf/tmux.config
 cp /home/jackson/.config/nvim/init.vim $FILES/conf/nvim.init
 cp /home/jackson/.bashrc $FILES/conf/.bashrc
+cp /home/jackson/.gitconfig $FILES/conf/.gitconfig
 
 # Services Files
 cp /etc/systemd/system/backup.service $FILES/services/backup.service
