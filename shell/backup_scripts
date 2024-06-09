@@ -11,7 +11,6 @@ cp /home/jackson/.gitconfig $FILES/conf/.gitconfig
 
 # Services Files
 cp /etc/systemd/system/backup.service $FILES/services/backup.service
-cp /etc/systemd/system/monster.service $FILES/services/monster.service
 
 # Scripts
 cp /usr/local/bin/backup $FILES/shell/backup

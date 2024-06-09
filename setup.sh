@@ -3,7 +3,7 @@
 
 # Move scripts to /usr/local/bin and set permissions
 chmod +x ./shell/*
-cp ./shell/* /usr/local/bin/
+cp -r ./shell/* /usr/local/bin/
 
 # Move services to /etc/systemd/system
 for file in ./services; do
