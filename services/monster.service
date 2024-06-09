@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs Monster Energy Web Scraper
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/monster
+User=Jackson
+
+[Install]
+WantedBy=multi-user.target 
