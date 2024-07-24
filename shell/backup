@@ -24,7 +24,8 @@ borg create --progress --stats --show-rc --verbose --compression lz4  /mnt/backu
 
 borg compact /mnt/backup
 
-umount /dev/nvme0n1p1
+umount PARTUUID=3e7b1e43-ff1c-4813-b7f4-ad0bac43a72d
+
 
 if [ $? -ne 0 ]; then
 	echo "Unmount failed"
