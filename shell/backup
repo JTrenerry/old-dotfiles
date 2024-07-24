@@ -2,7 +2,7 @@
 
 current_date=$(date +"%d-%m-%y-%H-%M")
 
-mount /dev/sda1 /mnt/backup
+mount /dev/nvme0n1p1 /mnt/backup
 
 if [ $? -ne 0 ]; then
 	echo "Mount failed"
