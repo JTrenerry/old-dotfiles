@@ -37,3 +37,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 if [ ! -d ~/.tmux/plugins/tpm ]; then
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
+
+
+# Install neovim config
+git clone https://github.com/JTrenerry/Neovim-Config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
