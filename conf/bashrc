@@ -20,14 +20,9 @@ reset='\e[0;m'
 # Set prompt colors
 PS1="\[$purple\]\u@\h \[$pink\]\w \[$green\]\$ \[$reset\]"
 
-# Optional: Change background and text color
 echo -e "\e]11;#000000\a"  # Set background color to black
 echo -e "\e]10;#FFFFFF\a"  # Set text color to white
 
-# Created by `pipx` on 2024-02-26 05:36:44
-export PATH="$PATH:/home/Jackson/.local/bin"
-
-export GPG_TTY=$(tty)
 
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 
@@ -40,6 +35,11 @@ alias vi='nvim'
 alias vim='nvim'
 alias nano='nvim'
 
+
+# Created by `pipx` on 2024-02-26 05:36:44
+export PATH="$PATH:/home/Jackson/.local/bin"
+
+export GPG_TTY=$(tty)
 
 # bun
 export BUN_INSTALL="$HOME/.bun"

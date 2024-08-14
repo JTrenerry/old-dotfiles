@@ -17,9 +17,9 @@ sudo systemctl enable backup.service
 sudo systemctl daemon-reload
 
 # Move configs
-ln -f ./conf/.bashrc ~/.bashrc
-ln -f ./conf/.vimrc ~/.vimrc
-ln -f ./conf/.gitconfig ~/.gitconfig
+ln -f ./conf/bashrc ~/.bashrc
+ln -f ./conf/vimrc ~/.vimrc
+ln -f ./conf/gitconfig ~/.gitconfig
 
 # Tmux
 ln -f ./conf/tmux.config ~/.tmux.conf
